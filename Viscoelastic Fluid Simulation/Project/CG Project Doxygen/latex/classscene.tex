@@ -1,0 +1,228 @@
+\hypertarget{classscene}{}\section{scene Class Reference}
+\label{classscene}\index{scene@{scene}}
+
+
+{\ttfamily \#include \char`\"{}scene.\+h\char`\"{}}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classscene_ada443dbbf28ef6094bd4fe15f1db5b17}{store\+Random\+Points} (int)
+\begin{DoxyCompactList}\small\item\em Function which generates fluid particles at random locations. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a91f9f8fd971538eb19ff1877e50746f8}{make\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Function which draws the scene for simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a3ff4def77367913f3e972d709676269b}{simulate} ()
+\begin{DoxyCompactList}\small\item\em Function which runs a single simultaion cycle for the fluid. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a7595aeca99db7ac7e6d2c6b1bfe0b0f9}{apply\+Viscosity} ()
+\begin{DoxyCompactList}\small\item\em Function that applies displacement and velocity changes due to viscosity of fluid. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a6f4e28c2ad9fc020475e837ae931166b}{adjust\+Springs} ()
+\begin{DoxyCompactList}\small\item\em Function that updates spring length and spring rest length after each simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a17b6f5ee5354a688db7506f68d77623e}{apply\+Spring\+Displacements} ()
+\begin{DoxyCompactList}\small\item\em Function that handles elasticity by applying spring displacements to each fluid particles. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a448751b5e9bad5d73901b765fc2b8a38}{double\+Density\+Relaxation} ()
+\begin{DoxyCompactList}\small\item\em Function which handles attraction and repulsion between particles based on the fluid density and neraby particles. \end{DoxyCompactList}\item 
+void \hyperlink{classscene_a18bf271763888eeb42d7155bdd2fc8b7}{resolve\+Collisions} ()
+\begin{DoxyCompactList}\small\item\em Function which resolves collisions between particles and the objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classscene_a0154fc603318164e75123be413dd7d48}{rho}
+\begin{DoxyCompactList}\small\item\em Density value. \end{DoxyCompactList}\item 
+float \hyperlink{classscene_a60b59a93c6e8f6f7ffa1f56a9c5f8f72}{rho\+\_\+near}
+\begin{DoxyCompactList}\small\item\em Near density value. \end{DoxyCompactList}\item 
+float \hyperlink{classscene_a40cf76b52a836034c27c5637a174caf1}{P}
+\begin{DoxyCompactList}\small\item\em Pressure value. \end{DoxyCompactList}\item 
+float \hyperlink{classscene_abab4e59ae9fd1f4fce19dd17a69d8144}{P\+\_\+near}
+\begin{DoxyCompactList}\small\item\em Near pressure value. \end{DoxyCompactList}\item 
+float \hyperlink{classscene_a5567d1a6ee5b2f47e667f37738193b70}{L} \mbox{[}1000\mbox{]}\mbox{[}1000\mbox{]}
+\begin{DoxyCompactList}\small\item\em Stores the spring length value between two fluid particles. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ \hyperlink{classscene_a1f3d0e6a319b04ba81ea27b862a1278a}{x\+\_\+prev}
+\begin{DoxyCompactList}\small\item\em Vector storing the previous positions for all particles. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ \hyperlink{classscene_aa74e8461ea4ee06a07c00c7185d9c9ab}{x}
+\begin{DoxyCompactList}\small\item\em Vector storing the current positions for all particles. \end{DoxyCompactList}\item 
+std\+::vector$<$ glm\+::vec3 $>$ \hyperlink{classscene_a38b4ab71581c6d43e6e565f366cd18a6}{v}
+\begin{DoxyCompactList}\small\item\em Vector storing the velocities for all particles. \end{DoxyCompactList}\item 
+int \hyperlink{classscene_a193bc997bddf91dbd027a9fb0d37355d}{num\+\_\+particles}
+\begin{DoxyCompactList}\small\item\em Number of particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classscene_a6f4e28c2ad9fc020475e837ae931166b}{}\label{classscene_a6f4e28c2ad9fc020475e837ae931166b} 
+\index{scene@{scene}!adjust\+Springs@{adjust\+Springs}}
+\index{adjust\+Springs@{adjust\+Springs}!scene@{scene}}
+\subsubsection{\texorpdfstring{adjust\+Springs()}{adjustSprings()}}
+{\footnotesize\ttfamily void scene\+::adjust\+Springs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that updates spring length and spring rest length after each simulation. 
+
+\hypertarget{classscene_a17b6f5ee5354a688db7506f68d77623e}{}\label{classscene_a17b6f5ee5354a688db7506f68d77623e} 
+\index{scene@{scene}!apply\+Spring\+Displacements@{apply\+Spring\+Displacements}}
+\index{apply\+Spring\+Displacements@{apply\+Spring\+Displacements}!scene@{scene}}
+\subsubsection{\texorpdfstring{apply\+Spring\+Displacements()}{applySpringDisplacements()}}
+{\footnotesize\ttfamily void scene\+::apply\+Spring\+Displacements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that handles elasticity by applying spring displacements to each fluid particles. 
+
+\hypertarget{classscene_a7595aeca99db7ac7e6d2c6b1bfe0b0f9}{}\label{classscene_a7595aeca99db7ac7e6d2c6b1bfe0b0f9} 
+\index{scene@{scene}!apply\+Viscosity@{apply\+Viscosity}}
+\index{apply\+Viscosity@{apply\+Viscosity}!scene@{scene}}
+\subsubsection{\texorpdfstring{apply\+Viscosity()}{applyViscosity()}}
+{\footnotesize\ttfamily void scene\+::apply\+Viscosity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that applies displacement and velocity changes due to viscosity of fluid. 
+
+\hypertarget{classscene_a448751b5e9bad5d73901b765fc2b8a38}{}\label{classscene_a448751b5e9bad5d73901b765fc2b8a38} 
+\index{scene@{scene}!double\+Density\+Relaxation@{double\+Density\+Relaxation}}
+\index{double\+Density\+Relaxation@{double\+Density\+Relaxation}!scene@{scene}}
+\subsubsection{\texorpdfstring{double\+Density\+Relaxation()}{doubleDensityRelaxation()}}
+{\footnotesize\ttfamily void scene\+::double\+Density\+Relaxation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which handles attraction and repulsion between particles based on the fluid density and neraby particles. 
+
+\hypertarget{classscene_a91f9f8fd971538eb19ff1877e50746f8}{}\label{classscene_a91f9f8fd971538eb19ff1877e50746f8} 
+\index{scene@{scene}!make\+Scene@{make\+Scene}}
+\index{make\+Scene@{make\+Scene}!scene@{scene}}
+\subsubsection{\texorpdfstring{make\+Scene()}{makeScene()}}
+{\footnotesize\ttfamily void scene\+::make\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which draws the scene for simulation. 
+
+\hypertarget{classscene_a18bf271763888eeb42d7155bdd2fc8b7}{}\label{classscene_a18bf271763888eeb42d7155bdd2fc8b7} 
+\index{scene@{scene}!resolve\+Collisions@{resolve\+Collisions}}
+\index{resolve\+Collisions@{resolve\+Collisions}!scene@{scene}}
+\subsubsection{\texorpdfstring{resolve\+Collisions()}{resolveCollisions()}}
+{\footnotesize\ttfamily void scene\+::resolve\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which resolves collisions between particles and the objects. 
+
+\hypertarget{classscene_a3ff4def77367913f3e972d709676269b}{}\label{classscene_a3ff4def77367913f3e972d709676269b} 
+\index{scene@{scene}!simulate@{simulate}}
+\index{simulate@{simulate}!scene@{scene}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void scene\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which runs a single simultaion cycle for the fluid. 
+
+\hypertarget{classscene_ada443dbbf28ef6094bd4fe15f1db5b17}{}\label{classscene_ada443dbbf28ef6094bd4fe15f1db5b17} 
+\index{scene@{scene}!store\+Random\+Points@{store\+Random\+Points}}
+\index{store\+Random\+Points@{store\+Random\+Points}!scene@{scene}}
+\subsubsection{\texorpdfstring{store\+Random\+Points()}{storeRandomPoints()}}
+{\footnotesize\ttfamily void scene\+::store\+Random\+Points (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Function which generates fluid particles at random locations. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classscene_a5567d1a6ee5b2f47e667f37738193b70}{}\label{classscene_a5567d1a6ee5b2f47e667f37738193b70} 
+\index{scene@{scene}!L@{L}}
+\index{L@{L}!scene@{scene}}
+\subsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily float scene\+::L\mbox{[}1000\mbox{]}\mbox{[}1000\mbox{]}}
+
+
+
+Stores the spring length value between two fluid particles. 
+
+\hypertarget{classscene_a193bc997bddf91dbd027a9fb0d37355d}{}\label{classscene_a193bc997bddf91dbd027a9fb0d37355d} 
+\index{scene@{scene}!num\+\_\+particles@{num\+\_\+particles}}
+\index{num\+\_\+particles@{num\+\_\+particles}!scene@{scene}}
+\subsubsection{\texorpdfstring{num\+\_\+particles}{num\_particles}}
+{\footnotesize\ttfamily int scene\+::num\+\_\+particles}
+
+
+
+Number of particles. 
+
+\hypertarget{classscene_a40cf76b52a836034c27c5637a174caf1}{}\label{classscene_a40cf76b52a836034c27c5637a174caf1} 
+\index{scene@{scene}!P@{P}}
+\index{P@{P}!scene@{scene}}
+\subsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily float scene\+::P}
+
+
+
+Pressure value. 
+
+\hypertarget{classscene_abab4e59ae9fd1f4fce19dd17a69d8144}{}\label{classscene_abab4e59ae9fd1f4fce19dd17a69d8144} 
+\index{scene@{scene}!P\+\_\+near@{P\+\_\+near}}
+\index{P\+\_\+near@{P\+\_\+near}!scene@{scene}}
+\subsubsection{\texorpdfstring{P\+\_\+near}{P\_near}}
+{\footnotesize\ttfamily float scene\+::\+P\+\_\+near}
+
+
+
+Near pressure value. 
+
+\hypertarget{classscene_a0154fc603318164e75123be413dd7d48}{}\label{classscene_a0154fc603318164e75123be413dd7d48} 
+\index{scene@{scene}!rho@{rho}}
+\index{rho@{rho}!scene@{scene}}
+\subsubsection{\texorpdfstring{rho}{rho}}
+{\footnotesize\ttfamily float scene\+::rho}
+
+
+
+Density value. 
+
+\hypertarget{classscene_a60b59a93c6e8f6f7ffa1f56a9c5f8f72}{}\label{classscene_a60b59a93c6e8f6f7ffa1f56a9c5f8f72} 
+\index{scene@{scene}!rho\+\_\+near@{rho\+\_\+near}}
+\index{rho\+\_\+near@{rho\+\_\+near}!scene@{scene}}
+\subsubsection{\texorpdfstring{rho\+\_\+near}{rho\_near}}
+{\footnotesize\ttfamily float scene\+::rho\+\_\+near}
+
+
+
+Near density value. 
+
+\hypertarget{classscene_a38b4ab71581c6d43e6e565f366cd18a6}{}\label{classscene_a38b4ab71581c6d43e6e565f366cd18a6} 
+\index{scene@{scene}!v@{v}}
+\index{v@{v}!scene@{scene}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ scene\+::v}
+
+
+
+Vector storing the velocities for all particles. 
+
+\hypertarget{classscene_aa74e8461ea4ee06a07c00c7185d9c9ab}{}\label{classscene_aa74e8461ea4ee06a07c00c7185d9c9ab} 
+\index{scene@{scene}!x@{x}}
+\index{x@{x}!scene@{scene}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ scene\+::x}
+
+
+
+Vector storing the current positions for all particles. 
+
+\hypertarget{classscene_a1f3d0e6a319b04ba81ea27b862a1278a}{}\label{classscene_a1f3d0e6a319b04ba81ea27b862a1278a} 
+\index{scene@{scene}!x\+\_\+prev@{x\+\_\+prev}}
+\index{x\+\_\+prev@{x\+\_\+prev}!scene@{scene}}
+\subsubsection{\texorpdfstring{x\+\_\+prev}{x\_prev}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ scene\+::x\+\_\+prev}
+
+
+
+Vector storing the previous positions for all particles. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/\hyperlink{scene_8h}{scene.\+h}\item 
+C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/\hyperlink{scene_8cpp}{scene.\+cpp}\end{DoxyCompactItemize}

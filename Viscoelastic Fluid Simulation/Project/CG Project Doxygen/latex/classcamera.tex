@@ -1,0 +1,314 @@
+\hypertarget{classcamera}{}\section{camera Class Reference}
+\label{classcamera}\index{camera@{camera}}
+
+
+{\ttfamily \#include \char`\"{}camera.\+h\char`\"{}}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcamera_a44a13e132dac8dde93536347ac2d18a6}{camera} (\hyperlink{classpoint3}{point3}, \hyperlink{classpoint3}{point3}, vec3, bool)
+\item 
+void \hyperlink{classcamera_a7ebf7f711ade618ac641b2ab29f619e1}{set} ()
+\item 
+void \hyperlink{classcamera_aa5561aba012714e140ff11ac2544ff56}{set} (\hyperlink{classpoint3}{point3}, \hyperlink{classpoint3}{point3}, vec3, bool)
+\item 
+void \hyperlink{classcamera_ab44bba4ebddf9079239507acad2802db}{rotate} (float, float, float)
+\item 
+void \hyperlink{classcamera_a3da4be99d5e2d1e3b1463a641e5ecc5a}{roll} (float)
+\item 
+void \hyperlink{classcamera_aff5c9f3f12062d6f65a7b8d94b9739da}{pitch} (float)
+\item 
+void \hyperlink{classcamera_acea846eceb98867afb1fc658ebe3bc50}{yaw} (float)
+\item 
+bool \hyperlink{classcamera_a903ee814bc121ea7bf030b1f67b4281e}{slide} (float, float, float, bool plane=true)
+\item 
+void \hyperlink{classcamera_a3b99e5ad64e63db86d3e826e43fc2228}{set\+Shape} (float \hyperlink{classcamera_ae8f2970ceb202edb61903e139271913d}{v\+Ang}, float \hyperlink{classcamera_aa7ca5df7a2626926b97db7d20f57de24}{asp}, float \hyperlink{classcamera_acc408f55afe5a320132da72d46498d7d}{nearD}, float \hyperlink{classcamera_a970214e0ae175df8fb37d25a8081cea3}{farD})
+\item 
+void \hyperlink{classcamera_a3139e23f1084f481d21dda80196f1e7f}{get\+Shape} (float \&\hyperlink{classcamera_ae8f2970ceb202edb61903e139271913d}{v\+Ang}, float \&\hyperlink{classcamera_aa7ca5df7a2626926b97db7d20f57de24}{asp}, float \&\hyperlink{classcamera_acc408f55afe5a320132da72d46498d7d}{nearD}, float \&\hyperlink{classcamera_a970214e0ae175df8fb37d25a8081cea3}{farD})
+\item 
+bool \hyperlink{classcamera_ae8d364c57e362bc1141625896c1a88e2}{check\+Inside} ()
+\item 
+bool \hyperlink{classcamera_a5f2c4ec9152aa1a4b5b269e477370d84}{interact} (float, bool \&)
+\item 
+void \hyperlink{classcamera_a32324b26eeec589c67d6a57bdf6d569d}{setsetting} (bool)
+\item 
+float \hyperlink{classcamera_a66f5b769bac0e8e0061b9ee218742aa2}{eye\+Component} (int component)
+\item 
+void \hyperlink{classcamera_a50833d5cf4b6237cfd7a32f8c168ab6b}{change\+Component} (int component, float value)
+\item 
+bool \hyperlink{classcamera_a064c75537e4e10added1ef58a702d35d}{getsetting} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcamera_adb0b12de88728a7b9e122ea950f8cad1}{set\+Modelview\+Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpoint3}{point3} \hyperlink{classcamera_ad21174a87a185a1054d54bac123abe9a}{origeye}
+\begin{DoxyCompactList}\small\item\em temporary eye used for storage before sitting \end{DoxyCompactList}\item 
+\hyperlink{classpoint3}{point3} \hyperlink{classcamera_aede6d35595e9ea8c98383915fb8f743d}{eye}
+\begin{DoxyCompactList}\small\item\em main eye that is used for viewing \end{DoxyCompactList}\item 
+\hyperlink{classpoint3}{point3} \hyperlink{classcamera_af59702993fada81bbb53e3fb287cc642}{look}
+\begin{DoxyCompactList}\small\item\em look direction (only for initializing) \end{DoxyCompactList}\item 
+vec3 \hyperlink{classcamera_a1d4c89c9cc2e4be93650f3a1f94c4555}{up}
+\begin{DoxyCompactList}\small\item\em up direction (only for initializing) \end{DoxyCompactList}\item 
+vec3 \hyperlink{classcamera_a610b4723a2dc8dbeefc815fe99116719}{u}
+\begin{DoxyCompactList}\small\item\em u, v, n perpendicular vectors for eye directions \end{DoxyCompactList}\item 
+vec3 \hyperlink{classcamera_a056e047e57d62a35813f8c5d7bfa78cb}{v}
+\item 
+vec3 \hyperlink{classcamera_ae436426eba7093f7260b5ca5db6c0068}{n}
+\item 
+bool \hyperlink{classcamera_ab46ae945b6f431f98ba4de772c50d62d}{free}
+\begin{DoxyCompactList}\small\item\em to set the camera free of restrictions \end{DoxyCompactList}\item 
+bool \hyperlink{classcamera_a7df2e3c3ed6046af3eb905462866b118}{sit}
+\begin{DoxyCompactList}\small\item\em to tell if the \char`\"{}student\char`\"{} has \char`\"{}sat\char`\"{} \end{DoxyCompactList}\item 
+float \hyperlink{classcamera_ae8f2970ceb202edb61903e139271913d}{v\+Ang}
+\begin{DoxyCompactList}\small\item\em viewing angle \end{DoxyCompactList}\item 
+float \hyperlink{classcamera_aa7ca5df7a2626926b97db7d20f57de24}{asp}
+\begin{DoxyCompactList}\small\item\em aspect ratio \end{DoxyCompactList}\item 
+float \hyperlink{classcamera_acc408f55afe5a320132da72d46498d7d}{nearD}
+\begin{DoxyCompactList}\small\item\em Location of near plane. \end{DoxyCompactList}\item 
+float \hyperlink{classcamera_a970214e0ae175df8fb37d25a8081cea3}{farD}
+\begin{DoxyCompactList}\small\item\em Location of far plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcamera_a44a13e132dac8dde93536347ac2d18a6}{}\label{classcamera_a44a13e132dac8dde93536347ac2d18a6} 
+\index{camera@{camera}!camera@{camera}}
+\index{camera@{camera}!camera@{camera}}
+\subsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily camera\+::camera (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint3}{point3}}]{E\+YE,  }\item[{\hyperlink{classpoint3}{point3}}]{L\+O\+OK,  }\item[{vec3}]{UP,  }\item[{bool}]{set }\end{DoxyParamCaption})}
+
+sets the camera with the passed parameters 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcamera_a50833d5cf4b6237cfd7a32f8c168ab6b}{}\label{classcamera_a50833d5cf4b6237cfd7a32f8c168ab6b} 
+\index{camera@{camera}!change\+Component@{change\+Component}}
+\index{change\+Component@{change\+Component}!camera@{camera}}
+\subsubsection{\texorpdfstring{change\+Component()}{changeComponent()}}
+{\footnotesize\ttfamily void camera\+::change\+Component (\begin{DoxyParamCaption}\item[{int}]{component,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+changes a component of eye \hypertarget{classcamera_ae8d364c57e362bc1141625896c1a88e2}{}\label{classcamera_ae8d364c57e362bc1141625896c1a88e2} 
+\index{camera@{camera}!check\+Inside@{check\+Inside}}
+\index{check\+Inside@{check\+Inside}!camera@{camera}}
+\subsubsection{\texorpdfstring{check\+Inside()}{checkInside()}}
+{\footnotesize\ttfamily bool camera\+::check\+Inside (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks if eye is inside a desk or table or outside the classroom \hypertarget{classcamera_a66f5b769bac0e8e0061b9ee218742aa2}{}\label{classcamera_a66f5b769bac0e8e0061b9ee218742aa2} 
+\index{camera@{camera}!eye\+Component@{eye\+Component}}
+\index{eye\+Component@{eye\+Component}!camera@{camera}}
+\subsubsection{\texorpdfstring{eye\+Component()}{eyeComponent()}}
+{\footnotesize\ttfamily float camera\+::eye\+Component (\begin{DoxyParamCaption}\item[{int}]{component }\end{DoxyParamCaption})}
+
+returns a component of eye \hypertarget{classcamera_a064c75537e4e10added1ef58a702d35d}{}\label{classcamera_a064c75537e4e10added1ef58a702d35d} 
+\index{camera@{camera}!getsetting@{getsetting}}
+\index{getsetting@{getsetting}!camera@{camera}}
+\subsubsection{\texorpdfstring{getsetting()}{getsetting()}}
+{\footnotesize\ttfamily bool camera\+::getsetting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get setting of camera \hypertarget{classcamera_a3139e23f1084f481d21dda80196f1e7f}{}\label{classcamera_a3139e23f1084f481d21dda80196f1e7f} 
+\index{camera@{camera}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!camera@{camera}}
+\subsubsection{\texorpdfstring{get\+Shape()}{getShape()}}
+{\footnotesize\ttfamily void camera\+::get\+Shape (\begin{DoxyParamCaption}\item[{float \&}]{v\+Ang,  }\item[{float \&}]{asp,  }\item[{float \&}]{nearD,  }\item[{float \&}]{farD }\end{DoxyParamCaption})}
+
+takes inputs from user \hypertarget{classcamera_a5f2c4ec9152aa1a4b5b269e477370d84}{}\label{classcamera_a5f2c4ec9152aa1a4b5b269e477370d84} 
+\index{camera@{camera}!interact@{interact}}
+\index{interact@{interact}!camera@{camera}}
+\subsubsection{\texorpdfstring{interact()}{interact()}}
+{\footnotesize\ttfamily bool camera\+::interact (\begin{DoxyParamCaption}\item[{float}]{height,  }\item[{bool \&}]{toggle }\end{DoxyParamCaption})}
+
+returns true if eye is close to a chair and changes the location of the eye to center of the chair and lowers the height toggles. If already sat, then the eye moves up to its original location \hypertarget{classcamera_aff5c9f3f12062d6f65a7b8d94b9739da}{}\label{classcamera_aff5c9f3f12062d6f65a7b8d94b9739da} 
+\index{camera@{camera}!pitch@{pitch}}
+\index{pitch@{pitch}!camera@{camera}}
+\subsubsection{\texorpdfstring{pitch()}{pitch()}}
+{\footnotesize\ttfamily void camera\+::pitch (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+pitches the camera by specified angle \hypertarget{classcamera_a3da4be99d5e2d1e3b1463a641e5ecc5a}{}\label{classcamera_a3da4be99d5e2d1e3b1463a641e5ecc5a} 
+\index{camera@{camera}!roll@{roll}}
+\index{roll@{roll}!camera@{camera}}
+\subsubsection{\texorpdfstring{roll()}{roll()}}
+{\footnotesize\ttfamily void camera\+::roll (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+rolls the camera by specified angle \hypertarget{classcamera_ab44bba4ebddf9079239507acad2802db}{}\label{classcamera_ab44bba4ebddf9079239507acad2802db} 
+\index{camera@{camera}!rotate@{rotate}}
+\index{rotate@{rotate}!camera@{camera}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void camera\+::rotate (\begin{DoxyParamCaption}\item[{float}]{pitch,  }\item[{float}]{yaw,  }\item[{float}]{roll }\end{DoxyParamCaption})}
+
+rotate function dominates all rotation roll, yaw and pitch \hypertarget{classcamera_a7ebf7f711ade618ac641b2ab29f619e1}{}\label{classcamera_a7ebf7f711ade618ac641b2ab29f619e1} 
+\index{camera@{camera}!set@{set}}
+\index{set@{set}!camera@{camera}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void camera\+::set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calculates u, v, n for the camera \hypertarget{classcamera_aa5561aba012714e140ff11ac2544ff56}{}\label{classcamera_aa5561aba012714e140ff11ac2544ff56} 
+\index{camera@{camera}!set@{set}}
+\index{set@{set}!camera@{camera}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void camera\+::set (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint3}{point3}}]{E\+YE,  }\item[{\hyperlink{classpoint3}{point3}}]{L\+O\+OK,  }\item[{vec3}]{UP,  }\item[{bool}]{set }\end{DoxyParamCaption})}
+
+calculates u, v, n from the passed parameters \hypertarget{classcamera_adb0b12de88728a7b9e122ea950f8cad1}{}\label{classcamera_adb0b12de88728a7b9e122ea950f8cad1} 
+\index{camera@{camera}!set\+Modelview\+Matrix@{set\+Modelview\+Matrix}}
+\index{set\+Modelview\+Matrix@{set\+Modelview\+Matrix}!camera@{camera}}
+\subsubsection{\texorpdfstring{set\+Modelview\+Matrix()}{setModelviewMatrix()}}
+{\footnotesize\ttfamily void camera\+::set\+Modelview\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+forms the matrix for multiplication and loads matrix into stack \hypertarget{classcamera_a32324b26eeec589c67d6a57bdf6d569d}{}\label{classcamera_a32324b26eeec589c67d6a57bdf6d569d} 
+\index{camera@{camera}!setsetting@{setsetting}}
+\index{setsetting@{setsetting}!camera@{camera}}
+\subsubsection{\texorpdfstring{setsetting()}{setsetting()}}
+{\footnotesize\ttfamily void camera\+::setsetting (\begin{DoxyParamCaption}\item[{bool}]{set }\end{DoxyParamCaption})}
+
+changes the camera to free flow \hypertarget{classcamera_a3b99e5ad64e63db86d3e826e43fc2228}{}\label{classcamera_a3b99e5ad64e63db86d3e826e43fc2228} 
+\index{camera@{camera}!set\+Shape@{set\+Shape}}
+\index{set\+Shape@{set\+Shape}!camera@{camera}}
+\subsubsection{\texorpdfstring{set\+Shape()}{setShape()}}
+{\footnotesize\ttfamily void camera\+::set\+Shape (\begin{DoxyParamCaption}\item[{float}]{v\+Ang,  }\item[{float}]{asp,  }\item[{float}]{nearD,  }\item[{float}]{farD }\end{DoxyParamCaption})}
+
+sets projection matrix \hypertarget{classcamera_a903ee814bc121ea7bf030b1f67b4281e}{}\label{classcamera_a903ee814bc121ea7bf030b1f67b4281e} 
+\index{camera@{camera}!slide@{slide}}
+\index{slide@{slide}!camera@{camera}}
+\subsubsection{\texorpdfstring{slide()}{slide()}}
+{\footnotesize\ttfamily bool camera\+::slide (\begin{DoxyParamCaption}\item[{float}]{delU,  }\item[{float}]{delV,  }\item[{float}]{delN,  }\item[{bool}]{plane = {\ttfamily true} }\end{DoxyParamCaption})}
+
+slides the camera by specified u, v, n distance if plane is true then the transformation will remain in the same XZ plane \hypertarget{classcamera_acea846eceb98867afb1fc658ebe3bc50}{}\label{classcamera_acea846eceb98867afb1fc658ebe3bc50} 
+\index{camera@{camera}!yaw@{yaw}}
+\index{yaw@{yaw}!camera@{camera}}
+\subsubsection{\texorpdfstring{yaw()}{yaw()}}
+{\footnotesize\ttfamily void camera\+::yaw (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+yaws the camera by specified angle 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcamera_aa7ca5df7a2626926b97db7d20f57de24}{}\label{classcamera_aa7ca5df7a2626926b97db7d20f57de24} 
+\index{camera@{camera}!asp@{asp}}
+\index{asp@{asp}!camera@{camera}}
+\subsubsection{\texorpdfstring{asp}{asp}}
+{\footnotesize\ttfamily float camera\+::asp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+aspect ratio 
+
+\hypertarget{classcamera_aede6d35595e9ea8c98383915fb8f743d}{}\label{classcamera_aede6d35595e9ea8c98383915fb8f743d} 
+\index{camera@{camera}!eye@{eye}}
+\index{eye@{eye}!camera@{camera}}
+\subsubsection{\texorpdfstring{eye}{eye}}
+{\footnotesize\ttfamily \hyperlink{classpoint3}{point3} camera\+::eye\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+main eye that is used for viewing 
+
+\hypertarget{classcamera_a970214e0ae175df8fb37d25a8081cea3}{}\label{classcamera_a970214e0ae175df8fb37d25a8081cea3} 
+\index{camera@{camera}!farD@{farD}}
+\index{farD@{farD}!camera@{camera}}
+\subsubsection{\texorpdfstring{farD}{farD}}
+{\footnotesize\ttfamily float camera\+::farD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Location of far plane. 
+
+\hypertarget{classcamera_ab46ae945b6f431f98ba4de772c50d62d}{}\label{classcamera_ab46ae945b6f431f98ba4de772c50d62d} 
+\index{camera@{camera}!free@{free}}
+\index{free@{free}!camera@{camera}}
+\subsubsection{\texorpdfstring{free}{free}}
+{\footnotesize\ttfamily bool camera\+::free\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+to set the camera free of restrictions 
+
+\hypertarget{classcamera_af59702993fada81bbb53e3fb287cc642}{}\label{classcamera_af59702993fada81bbb53e3fb287cc642} 
+\index{camera@{camera}!look@{look}}
+\index{look@{look}!camera@{camera}}
+\subsubsection{\texorpdfstring{look}{look}}
+{\footnotesize\ttfamily \hyperlink{classpoint3}{point3} camera\+::look\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+look direction (only for initializing) 
+
+\hypertarget{classcamera_ae436426eba7093f7260b5ca5db6c0068}{}\label{classcamera_ae436426eba7093f7260b5ca5db6c0068} 
+\index{camera@{camera}!n@{n}}
+\index{n@{n}!camera@{camera}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily vec3 camera\+::n\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classcamera_acc408f55afe5a320132da72d46498d7d}{}\label{classcamera_acc408f55afe5a320132da72d46498d7d} 
+\index{camera@{camera}!nearD@{nearD}}
+\index{nearD@{nearD}!camera@{camera}}
+\subsubsection{\texorpdfstring{nearD}{nearD}}
+{\footnotesize\ttfamily float camera\+::nearD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Location of near plane. 
+
+\hypertarget{classcamera_ad21174a87a185a1054d54bac123abe9a}{}\label{classcamera_ad21174a87a185a1054d54bac123abe9a} 
+\index{camera@{camera}!origeye@{origeye}}
+\index{origeye@{origeye}!camera@{camera}}
+\subsubsection{\texorpdfstring{origeye}{origeye}}
+{\footnotesize\ttfamily \hyperlink{classpoint3}{point3} camera\+::origeye\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+temporary eye used for storage before sitting 
+
+\hypertarget{classcamera_a7df2e3c3ed6046af3eb905462866b118}{}\label{classcamera_a7df2e3c3ed6046af3eb905462866b118} 
+\index{camera@{camera}!sit@{sit}}
+\index{sit@{sit}!camera@{camera}}
+\subsubsection{\texorpdfstring{sit}{sit}}
+{\footnotesize\ttfamily bool camera\+::sit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+to tell if the \char`\"{}student\char`\"{} has \char`\"{}sat\char`\"{} 
+
+\hypertarget{classcamera_a610b4723a2dc8dbeefc815fe99116719}{}\label{classcamera_a610b4723a2dc8dbeefc815fe99116719} 
+\index{camera@{camera}!u@{u}}
+\index{u@{u}!camera@{camera}}
+\subsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily vec3 camera\+::u\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+u, v, n perpendicular vectors for eye directions 
+
+\hypertarget{classcamera_a1d4c89c9cc2e4be93650f3a1f94c4555}{}\label{classcamera_a1d4c89c9cc2e4be93650f3a1f94c4555} 
+\index{camera@{camera}!up@{up}}
+\index{up@{up}!camera@{camera}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily vec3 camera\+::up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+up direction (only for initializing) 
+
+\hypertarget{classcamera_a056e047e57d62a35813f8c5d7bfa78cb}{}\label{classcamera_a056e047e57d62a35813f8c5d7bfa78cb} 
+\index{camera@{camera}!v@{v}}
+\index{v@{v}!camera@{camera}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily vec3 camera\+::v\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classcamera_ae8f2970ceb202edb61903e139271913d}{}\label{classcamera_ae8f2970ceb202edb61903e139271913d} 
+\index{camera@{camera}!v\+Ang@{v\+Ang}}
+\index{v\+Ang@{v\+Ang}!camera@{camera}}
+\subsubsection{\texorpdfstring{v\+Ang}{vAng}}
+{\footnotesize\ttfamily float camera\+::v\+Ang\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+viewing angle 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/\hyperlink{camera_8h}{camera.\+h}\item 
+C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/\hyperlink{camera_8cpp}{camera.\+cpp}\end{DoxyCompactItemize}

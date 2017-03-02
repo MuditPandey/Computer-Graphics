@@ -1,0 +1,322 @@
+\hypertarget{main_8cpp}{}\section{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.cpp File Reference}
+\label{main_8cpp}\index{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.\+cpp@{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Proj(1)/\+C\+G\+Proj/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.\+cpp}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtx/transform.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}point3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scene.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Mmsystem.\+h$>$}\newline
+{\ttfamily \#include $<$mciapi.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8cpp_ad26cbd181c6187aedf4e9e960c6d69e8}{N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES}~150
+\item 
+\#define \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X}~640.\+0
+\item 
+\#define \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y}~480.\+0
+\item 
+\#define \hyperlink{main_8cpp_ad6912cf4dd4af93435ae5c18a4de129e}{S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE}~1
+\item 
+\#define \hyperlink{main_8cpp_a1cd2a9f9fb489b7e369600d5f23aa14d}{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US}~0.\+1
+\item 
+\#define \hyperlink{main_8cpp_ac2a0d3c47213e8d621092d799c2aa609}{delT}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \hyperlink{main_8cpp_a9cd950ce8c47ae2a6afb35864eecf7c8}{up} (0, 1, 0)
+\item 
+void \hyperlink{main_8cpp_a12791d9e49a2fd3306290a226864aba4}{init\+GL} ()
+\item 
+void \hyperlink{main_8cpp_a549defebb0e9173289e93bb921d5fcc2}{mouse\+\_\+move} (int)
+\item 
+void \hyperlink{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832}{handle\+\_\+keyboard} (unsigned char, int, int)
+\item 
+void \hyperlink{main_8cpp_a45973bf54454603a2c9c68afb9b06983}{handle\+\_\+mouse} (int, int)
+\item 
+void \hyperlink{main_8cpp_acba6b5de159894f9d60c3d953b643372}{handle\+\_\+click} (int button, int state, int x, int y)
+\begin{DoxyCompactList}\small\item\em Handles what happens in an event of mouse click. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\item 
+void \hyperlink{main_8cpp_aed03ed54aa891d25b59a9cecb0973a5d}{reshape} (G\+Lsizei, G\+Lsizei)
+\item 
+void \hyperlink{main_8cpp_a2483ee344a4a211a51f3b5617e01ef3a}{sim} (int)
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{main_8cpp_ab652dfe8fd826be8b3e35aba1d9200c3}{T\+O\+G\+G\+LE} = false
+\item 
+char \hyperlink{main_8cpp_a58a6b319a4aba2259f60972473a2018d}{title} \mbox{[}$\,$\mbox{]} = \char`\"{}3\+D Shapes\char`\"{}
+\item 
+\hyperlink{classpoint3}{point3} \hyperlink{main_8cpp_a6922aa759e0a5a1c5a131dd2c1ea75af}{eye} (0, 1.\+2, 15)
+\item 
+\hyperlink{classpoint3}{point3} \hyperlink{main_8cpp_abbe807f3a016770f13702308e29e4960}{look} (0, 1.\+2, 0)
+\item 
+float \hyperlink{main_8cpp_a84e38a157d3d9e16b80eba0900521f16}{F\+OV} = 45.\+0
+\item 
+float \hyperlink{main_8cpp_a3ebe10fdbfbc6447bbc54bb9e9adfb0b}{A\+SP} = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y}
+\item 
+float \hyperlink{main_8cpp_a3d930f24f27d507555ddc8608ffa63f7}{N\+E\+A\+RD} = 1.\+0
+\item 
+float \hyperlink{main_8cpp_aff685efe50714cccfca98362c138a85a}{F\+A\+RD} = 100.\+0
+\item 
+\hyperlink{classcamera}{camera} \hyperlink{main_8cpp_a936089f0aa562574f7b0b70c1aa56923}{c} (\hyperlink{main_8cpp_a6922aa759e0a5a1c5a131dd2c1ea75af}{eye}, \hyperlink{main_8cpp_abbe807f3a016770f13702308e29e4960}{look}, \hyperlink{main_8cpp_a9cd950ce8c47ae2a6afb35864eecf7c8}{up}, true)
+\item 
+\hyperlink{classscene}{scene} \hyperlink{main_8cpp_a7a471578296a164f584eb384cf8a552b}{classroom}
+\item 
+float \hyperlink{main_8cpp_a1e5fc2ae500c31e0e1794a16a2da6ec9}{Y\+AW} = 0
+\item 
+float \hyperlink{main_8cpp_a4e1ba3fd3cda0c3ec4cecbb34f083b65}{P\+I\+T\+CH} = 0
+\item 
+float \hyperlink{main_8cpp_a4b83a29f4f37f6c6855394f5c839f5b3}{R\+O\+LL} = 0
+\item 
+int \hyperlink{main_8cpp_a00b14506aed0240ca0db4c9ba7d29573}{rolled} = 1
+\item 
+int \hyperlink{main_8cpp_a48677fb7fd31bc801004844bde824456}{P\+R\+E\+VX} = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / 2
+\item 
+int \hyperlink{main_8cpp_aed76d1e43b03fbdeb19c4ee5df124698}{P\+R\+E\+VY} = \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y} / 2
+\item 
+int \hyperlink{main_8cpp_ac6e49dbee9c47983305a2adc0cf7e5e2}{X\+N\+EW} = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / 2
+\item 
+int \hyperlink{main_8cpp_a49cd73bc7643a049e2d9de1afcdc2d39}{Y\+N\+EW} = \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y} / 2
+\item 
+float \hyperlink{main_8cpp_a15776f201dc8b554110222e67a51cbae}{zoom} = 0
+\item 
+bool \hyperlink{main_8cpp_a66076fd4c94f1ef66bb0256b653cf37f}{pause} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8cpp_ac2a0d3c47213e8d621092d799c2aa609}{}\label{main_8cpp_ac2a0d3c47213e8d621092d799c2aa609} 
+\index{main.\+cpp@{main.\+cpp}!delT@{delT}}
+\index{delT@{delT}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{delT}{delT}}
+{\footnotesize\ttfamily \#define delT~1}
+
+\hypertarget{main_8cpp_ad26cbd181c6187aedf4e9e960c6d69e8}{}\label{main_8cpp_ad26cbd181c6187aedf4e9e960c6d69e8} 
+\index{main.\+cpp@{main.\+cpp}!N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES@{N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES}}
+\index{N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES@{N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES}{NO\_PARTICLES}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+P\+A\+R\+T\+I\+C\+L\+ES~150}
+
+\hypertarget{main_8cpp_a1cd2a9f9fb489b7e369600d5f23aa14d}{}\label{main_8cpp_a1cd2a9f9fb489b7e369600d5f23aa14d} 
+\index{main.\+cpp@{main.\+cpp}!P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US}}
+\index{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US}{PARTICLE\_RADIUS}}
+{\footnotesize\ttfamily \#define P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+R\+A\+D\+I\+US~0.\+1}
+
+\hypertarget{main_8cpp_ad6912cf4dd4af93435ae5c18a4de129e}{}\label{main_8cpp_ad6912cf4dd4af93435ae5c18a4de129e} 
+\index{main.\+cpp@{main.\+cpp}!S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE@{S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}
+\index{S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE@{S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE}{STEP\_DISTANCE}}
+{\footnotesize\ttfamily \#define S\+T\+E\+P\+\_\+\+D\+I\+S\+T\+A\+N\+CE~1}
+
+\hypertarget{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{}\label{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788} 
+\index{main.\+cpp@{main.\+cpp}!W\+I\+N\+D\+O\+W\+\_\+X@{W\+I\+N\+D\+O\+W\+\_\+X}}
+\index{W\+I\+N\+D\+O\+W\+\_\+X@{W\+I\+N\+D\+O\+W\+\_\+X}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+X}{WINDOW\_X}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+O\+W\+\_\+X~640.\+0}
+
+\hypertarget{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{}\label{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f} 
+\index{main.\+cpp@{main.\+cpp}!W\+I\+N\+D\+O\+W\+\_\+Y@{W\+I\+N\+D\+O\+W\+\_\+Y}}
+\index{W\+I\+N\+D\+O\+W\+\_\+Y@{W\+I\+N\+D\+O\+W\+\_\+Y}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+Y}{WINDOW\_Y}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+O\+W\+\_\+Y~480.\+0}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{}\label{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269} 
+\index{main.\+cpp@{main.\+cpp}!display@{display}}
+\index{display@{display}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+display function which displays the scene and runs in a loop \hypertarget{main_8cpp_acba6b5de159894f9d60c3d953b643372}{}\label{main_8cpp_acba6b5de159894f9d60c3d953b643372} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+click@{handle\+\_\+click}}
+\index{handle\+\_\+click@{handle\+\_\+click}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+click()}{handle\_click()}}
+{\footnotesize\ttfamily void handle\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Handles what happens in an event of mouse click. 
+
+\hypertarget{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832}{}\label{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+keyboard@{handle\+\_\+keyboard}}
+\index{handle\+\_\+keyboard@{handle\+\_\+keyboard}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+keyboard()}{handle\_keyboard()}}
+{\footnotesize\ttfamily void handle\+\_\+keyboard (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+keyboard handler which handles what action takes place when a ceratin key is pressed \hypertarget{main_8cpp_a45973bf54454603a2c9c68afb9b06983}{}\label{main_8cpp_a45973bf54454603a2c9c68afb9b06983} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+mouse@{handle\+\_\+mouse}}
+\index{handle\+\_\+mouse@{handle\+\_\+mouse}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+mouse()}{handle\_mouse()}}
+{\footnotesize\ttfamily void handle\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+saves the mouse location whenever the mouse moves \hypertarget{main_8cpp_a12791d9e49a2fd3306290a226864aba4}{}\label{main_8cpp_a12791d9e49a2fd3306290a226864aba4} 
+\index{main.\+cpp@{main.\+cpp}!init\+GL@{init\+GL}}
+\index{init\+GL@{init\+GL}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{init\+G\+L()}{initGL()}}
+{\footnotesize\ttfamily void init\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes window, matrix for open\+GL \hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Main function\+: G\+L\+UT runs as a console application starting at \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()} \hypertarget{main_8cpp_a549defebb0e9173289e93bb921d5fcc2}{}\label{main_8cpp_a549defebb0e9173289e93bb921d5fcc2} 
+\index{main.\+cpp@{main.\+cpp}!mouse\+\_\+move@{mouse\+\_\+move}}
+\index{mouse\+\_\+move@{mouse\+\_\+move}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{mouse\+\_\+move()}{mouse\_move()}}
+{\footnotesize\ttfamily void mouse\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+mouse\+\_\+move is called every 10 milliseconds and updates the pitch and yaw depending on the mouse movements the mouse is then centered to the middle of the screen window \hypertarget{main_8cpp_aed03ed54aa891d25b59a9cecb0973a5d}{}\label{main_8cpp_aed03ed54aa891d25b59a9cecb0973a5d} 
+\index{main.\+cpp@{main.\+cpp}!reshape@{reshape}}
+\index{reshape@{reshape}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{reshape()}{reshape()}}
+{\footnotesize\ttfamily void reshape (\begin{DoxyParamCaption}\item[{G\+Lsizei}]{width,  }\item[{G\+Lsizei}]{height }\end{DoxyParamCaption})}
+
+Handler for window re-\/size event. Called back when the window first appears and whenever the window is re-\/sized with its new width and height \hypertarget{main_8cpp_a2483ee344a4a211a51f3b5617e01ef3a}{}\label{main_8cpp_a2483ee344a4a211a51f3b5617e01ef3a} 
+\index{main.\+cpp@{main.\+cpp}!sim@{sim}}
+\index{sim@{sim}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{sim()}{sim()}}
+{\footnotesize\ttfamily void sim (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a9cd950ce8c47ae2a6afb35864eecf7c8}{}\label{main_8cpp_a9cd950ce8c47ae2a6afb35864eecf7c8} 
+\index{main.\+cpp@{main.\+cpp}!up@{up}}
+\index{up@{up}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{up()}{up()}}
+{\footnotesize\ttfamily vec3 up (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{1}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_a3ebe10fdbfbc6447bbc54bb9e9adfb0b}{}\label{main_8cpp_a3ebe10fdbfbc6447bbc54bb9e9adfb0b} 
+\index{main.\+cpp@{main.\+cpp}!A\+SP@{A\+SP}}
+\index{A\+SP@{A\+SP}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{A\+SP}{ASP}}
+{\footnotesize\ttfamily float A\+SP = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y}}
+
+\hypertarget{main_8cpp_a936089f0aa562574f7b0b70c1aa56923}{}\label{main_8cpp_a936089f0aa562574f7b0b70c1aa56923} 
+\index{main.\+cpp@{main.\+cpp}!c@{c}}
+\index{c@{c}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \hyperlink{classcamera}{camera} c(\hyperlink{main_8cpp_a6922aa759e0a5a1c5a131dd2c1ea75af}{eye}, \hyperlink{main_8cpp_abbe807f3a016770f13702308e29e4960}{look}, \hyperlink{main_8cpp_a9cd950ce8c47ae2a6afb35864eecf7c8}{up}, true)}
+
+\hypertarget{main_8cpp_a7a471578296a164f584eb384cf8a552b}{}\label{main_8cpp_a7a471578296a164f584eb384cf8a552b} 
+\index{main.\+cpp@{main.\+cpp}!classroom@{classroom}}
+\index{classroom@{classroom}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{classroom}{classroom}}
+{\footnotesize\ttfamily \hyperlink{classscene}{scene} classroom}
+
+\hypertarget{main_8cpp_a6922aa759e0a5a1c5a131dd2c1ea75af}{}\label{main_8cpp_a6922aa759e0a5a1c5a131dd2c1ea75af} 
+\index{main.\+cpp@{main.\+cpp}!eye@{eye}}
+\index{eye@{eye}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{eye}{eye}}
+{\footnotesize\ttfamily \hyperlink{classpoint3}{point3} eye(0, 1.\+2, 15)}
+
+\hypertarget{main_8cpp_aff685efe50714cccfca98362c138a85a}{}\label{main_8cpp_aff685efe50714cccfca98362c138a85a} 
+\index{main.\+cpp@{main.\+cpp}!F\+A\+RD@{F\+A\+RD}}
+\index{F\+A\+RD@{F\+A\+RD}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{F\+A\+RD}{FARD}}
+{\footnotesize\ttfamily float F\+A\+RD = 100.\+0}
+
+\hypertarget{main_8cpp_a84e38a157d3d9e16b80eba0900521f16}{}\label{main_8cpp_a84e38a157d3d9e16b80eba0900521f16} 
+\index{main.\+cpp@{main.\+cpp}!F\+OV@{F\+OV}}
+\index{F\+OV@{F\+OV}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{F\+OV}{FOV}}
+{\footnotesize\ttfamily float F\+OV = 45.\+0}
+
+\hypertarget{main_8cpp_abbe807f3a016770f13702308e29e4960}{}\label{main_8cpp_abbe807f3a016770f13702308e29e4960} 
+\index{main.\+cpp@{main.\+cpp}!look@{look}}
+\index{look@{look}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{look}{look}}
+{\footnotesize\ttfamily \hyperlink{classpoint3}{point3} look(0, 1.\+2, 0)}
+
+\hypertarget{main_8cpp_a3d930f24f27d507555ddc8608ffa63f7}{}\label{main_8cpp_a3d930f24f27d507555ddc8608ffa63f7} 
+\index{main.\+cpp@{main.\+cpp}!N\+E\+A\+RD@{N\+E\+A\+RD}}
+\index{N\+E\+A\+RD@{N\+E\+A\+RD}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{N\+E\+A\+RD}{NEARD}}
+{\footnotesize\ttfamily float N\+E\+A\+RD = 1.\+0}
+
+\hypertarget{main_8cpp_a66076fd4c94f1ef66bb0256b653cf37f}{}\label{main_8cpp_a66076fd4c94f1ef66bb0256b653cf37f} 
+\index{main.\+cpp@{main.\+cpp}!pause@{pause}}
+\index{pause@{pause}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily bool pause = true}
+
+\hypertarget{main_8cpp_a4e1ba3fd3cda0c3ec4cecbb34f083b65}{}\label{main_8cpp_a4e1ba3fd3cda0c3ec4cecbb34f083b65} 
+\index{main.\+cpp@{main.\+cpp}!P\+I\+T\+CH@{P\+I\+T\+CH}}
+\index{P\+I\+T\+CH@{P\+I\+T\+CH}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{P\+I\+T\+CH}{PITCH}}
+{\footnotesize\ttfamily float P\+I\+T\+CH = 0}
+
+\hypertarget{main_8cpp_a48677fb7fd31bc801004844bde824456}{}\label{main_8cpp_a48677fb7fd31bc801004844bde824456} 
+\index{main.\+cpp@{main.\+cpp}!P\+R\+E\+VX@{P\+R\+E\+VX}}
+\index{P\+R\+E\+VX@{P\+R\+E\+VX}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{P\+R\+E\+VX}{PREVX}}
+{\footnotesize\ttfamily int P\+R\+E\+VX = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / 2}
+
+\hypertarget{main_8cpp_aed76d1e43b03fbdeb19c4ee5df124698}{}\label{main_8cpp_aed76d1e43b03fbdeb19c4ee5df124698} 
+\index{main.\+cpp@{main.\+cpp}!P\+R\+E\+VY@{P\+R\+E\+VY}}
+\index{P\+R\+E\+VY@{P\+R\+E\+VY}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{P\+R\+E\+VY}{PREVY}}
+{\footnotesize\ttfamily int P\+R\+E\+VY = \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y} / 2}
+
+\hypertarget{main_8cpp_a4b83a29f4f37f6c6855394f5c839f5b3}{}\label{main_8cpp_a4b83a29f4f37f6c6855394f5c839f5b3} 
+\index{main.\+cpp@{main.\+cpp}!R\+O\+LL@{R\+O\+LL}}
+\index{R\+O\+LL@{R\+O\+LL}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{R\+O\+LL}{ROLL}}
+{\footnotesize\ttfamily float R\+O\+LL = 0}
+
+\hypertarget{main_8cpp_a00b14506aed0240ca0db4c9ba7d29573}{}\label{main_8cpp_a00b14506aed0240ca0db4c9ba7d29573} 
+\index{main.\+cpp@{main.\+cpp}!rolled@{rolled}}
+\index{rolled@{rolled}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{rolled}{rolled}}
+{\footnotesize\ttfamily int rolled = 1}
+
+\hypertarget{main_8cpp_a58a6b319a4aba2259f60972473a2018d}{}\label{main_8cpp_a58a6b319a4aba2259f60972473a2018d} 
+\index{main.\+cpp@{main.\+cpp}!title@{title}}
+\index{title@{title}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily char title\mbox{[}$\,$\mbox{]} = \char`\"{}3\+D Shapes\char`\"{}}
+
+\hypertarget{main_8cpp_ab652dfe8fd826be8b3e35aba1d9200c3}{}\label{main_8cpp_ab652dfe8fd826be8b3e35aba1d9200c3} 
+\index{main.\+cpp@{main.\+cpp}!T\+O\+G\+G\+LE@{T\+O\+G\+G\+LE}}
+\index{T\+O\+G\+G\+LE@{T\+O\+G\+G\+LE}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{T\+O\+G\+G\+LE}{TOGGLE}}
+{\footnotesize\ttfamily bool T\+O\+G\+G\+LE = false}
+
+\hypertarget{main_8cpp_ac6e49dbee9c47983305a2adc0cf7e5e2}{}\label{main_8cpp_ac6e49dbee9c47983305a2adc0cf7e5e2} 
+\index{main.\+cpp@{main.\+cpp}!X\+N\+EW@{X\+N\+EW}}
+\index{X\+N\+EW@{X\+N\+EW}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{X\+N\+EW}{XNEW}}
+{\footnotesize\ttfamily int X\+N\+EW = \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X} / 2}
+
+\hypertarget{main_8cpp_a1e5fc2ae500c31e0e1794a16a2da6ec9}{}\label{main_8cpp_a1e5fc2ae500c31e0e1794a16a2da6ec9} 
+\index{main.\+cpp@{main.\+cpp}!Y\+AW@{Y\+AW}}
+\index{Y\+AW@{Y\+AW}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Y\+AW}{YAW}}
+{\footnotesize\ttfamily float Y\+AW = 0}
+
+\hypertarget{main_8cpp_a49cd73bc7643a049e2d9de1afcdc2d39}{}\label{main_8cpp_a49cd73bc7643a049e2d9de1afcdc2d39} 
+\index{main.\+cpp@{main.\+cpp}!Y\+N\+EW@{Y\+N\+EW}}
+\index{Y\+N\+EW@{Y\+N\+EW}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Y\+N\+EW}{YNEW}}
+{\footnotesize\ttfamily int Y\+N\+EW = \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y} / 2}
+
+\hypertarget{main_8cpp_a15776f201dc8b554110222e67a51cbae}{}\label{main_8cpp_a15776f201dc8b554110222e67a51cbae} 
+\index{main.\+cpp@{main.\+cpp}!zoom@{zoom}}
+\index{zoom@{zoom}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{zoom}{zoom}}
+{\footnotesize\ttfamily float zoom = 0}
+
